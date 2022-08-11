@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia(n){
+    	return Math.round(Math.random()* n);
+    }
+    
+      var numeroPensado = sorteia(20);
+
+    var nome = prompt("Olá, vamos brincar de adivinhar ? Eu estou pensando em número e você precisa adivinhar qual é tá legal? Mas antes de começar, por favor digite o seu nome : ");
+
+  
+
+    var chute = parseInt(prompt("Pronto já pensei no número , " + nome + " . Qual você acha que é?"));
+
+    if(chute == numeroPensado) {
+
+        mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+
+    } else {
+
+    	if(chute > numeroPensado){
+
+			mostra("Que pena, você errou! Seu chute foi maior que o numero pensado, o sorteado foi: " + numeroPensado);
+
+    	}else{
+
+    		if(chute < numeroPensado){
+    			mostra("Que pena, você errou! Seu chute foi menor que o numero pensado, o sorteado foi: " + numeroPensado);
+    		}
+    	}
+    }
+</script>

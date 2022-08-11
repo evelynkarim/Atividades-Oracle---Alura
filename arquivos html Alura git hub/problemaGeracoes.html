@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+
+<script>
+//Imprima esse número da seguinte maneira: calcule quantos anos passaram desde 1500 e divida o resultado pela média de 28 anos.
+//Não esqueça de usar o pulaLinha e o mostra.
+
+function pulaLinha() {
+	document.write("<br>");
+}
+
+function mostra(frase) {
+	document.write(frase);
+	pulaLinha();
+}
+
+var anoInicio = 1500;
+var anoAtual = 2022;
+var mediaGeracoes = (anoAtual - anoInicio) / 28;
+
+mostra("O número de gerações desde a descoberta do Brasil é de: " + Math.round(mediaGeracoes));
+
+
+</script>

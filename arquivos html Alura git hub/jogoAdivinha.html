@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+
+<script>
+	function pulaLinha(){
+		document.write("<br>");
+	}
+
+	function mostra(frase){
+		document.write(frase);
+	pulaLinha();
+	
+	}
+	
+var numeroPensado = Math.round(Math.random() * 5); //math.randon irá sortear o numero aleatório
+console.log(numeroPensado); //testa o codigo e no console JS crome é possivel visualizar o numero sorteado com antecedencia
+var chute = parseInt(prompt("Digite seu chute: "));
+
+
+if(chute == numeroPensado) {
+	mostra("Que chute hein?? Você acertou!!");
+
+}else{
+
+	mostra("Que pena, você errou o chute, o número pensado foi " + numeroPensado);
+
+}
+
+</script>
